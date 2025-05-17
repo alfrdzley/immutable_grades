@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    {% for tugas in tugas %}
+        <h2>{{ tugas.nama }}</h2>
+        <p>{{ tugas.deskripsi }}</p>
+        <p>Deadline: {{ tugas.deadline }}</p>
+        <a href="{% url 'grades:upload_tugas' tugas.id %}">Upload Tugas</a>
+        <hr>
+    {% endfor %}
+
+</body>
+</html>

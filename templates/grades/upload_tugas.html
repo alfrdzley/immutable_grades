@@ -1,0 +1,12 @@
+{% extends 'grades/base.html' %}
+
+{% block content %}
+    <div class="container">
+        <h2>Upload Tugas</h2>
+        <form method="POST" enctype="multipart/form-data" name="upload_tugas">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary">Upload</button>
+        </form>
+    </div>
+{% endblock %}

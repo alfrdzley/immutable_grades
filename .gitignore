@@ -1,0 +1,7 @@
+.env
+.venv
+media
+db.sqlite3
+.idea
+BASE_DIR
+ImmutableGrades_(1).ipynb
